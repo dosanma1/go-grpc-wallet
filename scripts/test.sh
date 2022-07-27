@@ -1,0 +1,3 @@
+#!/bin/bash
+
+go clean --cache && go test -v -cover github.com/dosanma1/bluelabs_assessment/...

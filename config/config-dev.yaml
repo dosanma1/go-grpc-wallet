@@ -1,0 +1,20 @@
+HTTP:
+  Port: ":5000"
+  Development: true
+  ReadTimeout: 10
+  WriteTimeout: 10
+  MaxConnectionIdle: 10
+  MaxConnectionAge: 10
+
+GRPC:
+  Protocol: tcp
+  Host: wallet
+  Port: ":9000"
+
+PostgreSQL:
+  PostgresqlHost: db
+  PostgresqlPort: 5432
+  PostgresqlUser: postgres
+  PostgresqlPassword: postgres
+  PostgresqlDBName: postgres
+  PostgresqlSslmode: "disable"
