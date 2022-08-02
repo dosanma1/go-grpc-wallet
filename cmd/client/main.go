@@ -13,6 +13,7 @@ import (
 	"github.com/google/uuid"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/resolver"
 	"google.golang.org/grpc/status"
 )
 
@@ -30,9 +31,15 @@ func main() {
 		logger.Fatal(err)
 	}
 
+	resolver.SetDefaultScheme("dns")
+
 	addr := fmt.Sprintf("%s%s", cfg.GRPC.Host, cfg.GRPC.Port)
 	logger.Println(addr)
-	conn, err := grpc.Dial(addr, grpc.WithInsecure())
+
+	conn, err := grpc.Dial(addr,
+		grpc.WithDefaultServiceConfig(`{"loadBalancingPolicy":"round_robin"}`),
+		grpc.WithInsecure(),
+	)
 	if err != nil {
 		panic("cannot connect with server " + err.Error())
 	}

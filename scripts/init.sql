@@ -2,6 +2,6 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
 CREATE TABLE wallet (
 	user_id UUID PRIMARY KEY,
-	balance DECIMAL NOT NULL
+	balance BIGINT NOT NULL
 );
 

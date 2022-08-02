@@ -9,7 +9,7 @@ import (
 
 type Wallet struct {
 	UserID  uuid.UUID `json:"user_id"`
-	Balance float64   `json:"balance"`
+	Balance int64     `json:"balance"`
 }
 
 func (w *Wallet) ToProtoBuffer() *pb.Wallet {

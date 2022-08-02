@@ -151,7 +151,7 @@ func TestUpdateWallet(t *testing.T) {
 	assert.NoError(t, err)
 	assert.NotNil(t, found)
 
-	var amount float64 = 1000
+	var amount int64 = 1000
 	found, err = serviceClient.UpdateWallet(ctx, &pb.FundsReq{UserId: wallet.UserId, Amount: amount})
 	assert.NoError(t, err)
 	assert.Equal(t, wallet.Balance+amount, found.Balance)

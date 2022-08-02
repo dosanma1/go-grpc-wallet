@@ -12,7 +12,7 @@ import (
 type WalletRepository interface {
 	Create(wallet *models.Wallet) error
 	Get(userID string) (wallet *models.Wallet, err error)
-	Update(userID string, amount float64) error
+	Update(userID string, amount int64) error
 }
 
 type walletRepository struct {
@@ -42,7 +42,7 @@ func (r *walletRepository) Get(userID string) (*models.Wallet, error) {
 	return &wallet, err
 }
 
-func (r *walletRepository) Update(userID string, amount float64) error {
+func (r *walletRepository) Update(userID string, amount int64) error {
 	_, err := r.db.Exec(context.Background(), "UPDATE wallet SET balance = balance + $1 WHERE user_id = $2 RETURNING balance", amount, userID)
 	if err != nil {
 		return err

@@ -125,7 +125,7 @@ func TestWalletRepositoryUpdate(t *testing.T) {
 	assert.NoError(t, err)
 	assert.NotNil(t, found)
 
-	var amount float64 = 200
+	var amount int64 = 200
 	err = r.Update(wallet.UserID.String(), amount)
 	assert.NoError(t, err)
 
