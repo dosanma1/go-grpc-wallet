@@ -126,8 +126,9 @@ func TestWalletRepositoryUpdate(t *testing.T) {
 	assert.NotNil(t, found)
 
 	var amount int64 = 200
-	err = r.Update(wallet.UserID.String(), amount)
+	updated, err := r.Update(wallet.UserID.String(), amount)
 	assert.NoError(t, err)
+	assert.NotNil(t, updated)
 
 	found, err = r.Get(wallet.UserID.String())
 	assert.NoError(t, err)

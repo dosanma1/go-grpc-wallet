@@ -41,21 +41,9 @@ func (s *walletService) GetWallet(ctx context.Context, req *pb.WalletReq) (*pb.W
 }
 
 func (s *walletService) UpdateWallet(ctx context.Context, req *pb.FundsReq) (*pb.Wallet, error) {
-
-	wallet, err := s.walletRepository.Get(req.UserId)
-	if err != nil {
-		return nil, status.Error(codes.NotFound, err.Error())
-	}
-	if (wallet.Balance + req.Amount) < 0 {
-		return nil, status.Error(codes.PermissionDenied, "insufficient funds")
-	}
-
-	err = s.walletRepository.Update(req.UserId, req.Amount)
+	wallet, err := s.walletRepository.Update(req.UserId, req.Amount)
 	if err != nil {
 		return nil, err
 	}
-
-	wallet, err = s.walletRepository.Get(req.UserId)
-
 	return wallet.ToProtoBuffer(), err
 }
