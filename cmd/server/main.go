@@ -6,10 +6,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/dosanma1/bluelabs_assessment/config"
-	"github.com/dosanma1/bluelabs_assessment/internal/postgresql"
-	"github.com/dosanma1/bluelabs_assessment/internal/server/grpc"
-	"github.com/dosanma1/bluelabs_assessment/internal/server/http"
+	"github.com/dosanma1/go-grpc-wallet/config"
+	"github.com/dosanma1/go-grpc-wallet/internal/postgresql"
+	"github.com/dosanma1/go-grpc-wallet/internal/server/grpc"
+	"github.com/dosanma1/go-grpc-wallet/internal/server/http"
 	"github.com/sirupsen/logrus"
 )
 

@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/dosanma1/bluelabs_assessment/config"
-	"github.com/dosanma1/bluelabs_assessment/internal/server"
-	"github.com/dosanma1/bluelabs_assessment/middleware"
+	"github.com/dosanma1/go-grpc-wallet/config"
+	"github.com/dosanma1/go-grpc-wallet/internal/server"
+	"github.com/dosanma1/go-grpc-wallet/middleware"
 	"github.com/gin-gonic/gin"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/sirupsen/logrus"

@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package grpc;
 
-option go_package = "github.com/dosanma1/bluelabs_assessment/pkg/pb/";
+option go_package = "github.com/dosanma1/go-grpc-wallet/pkg/pb/";
 
 message Wallet {
     string userId = 1;

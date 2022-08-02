@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/dosanma1/bluelabs_assessment/config"
+	"github.com/dosanma1/go-grpc-wallet/config"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/pkg/errors"
 )

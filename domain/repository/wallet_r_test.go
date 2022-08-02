@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/dosanma1/bluelabs_assessment/config"
-	"github.com/dosanma1/bluelabs_assessment/domain/models"
-	"github.com/dosanma1/bluelabs_assessment/internal/postgresql"
+	"github.com/dosanma1/go-grpc-wallet/config"
+	"github.com/dosanma1/go-grpc-wallet/domain/models"
+	"github.com/dosanma1/go-grpc-wallet/internal/postgresql"
 	"github.com/google/uuid"
 	"github.com/jackc/pgx/v4"
 	"github.com/sirupsen/logrus"

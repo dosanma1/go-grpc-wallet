@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/dosanma1/bluelabs_assessment/config"
-	"github.com/dosanma1/bluelabs_assessment/pkg/pb"
+	"github.com/dosanma1/go-grpc-wallet/config"
+	"github.com/dosanma1/go-grpc-wallet/pkg/pb"
 	"github.com/google/uuid"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"

@@ -3,7 +3,7 @@ package repository
 import (
 	"context"
 
-	"github.com/dosanma1/bluelabs_assessment/domain/models"
+	"github.com/dosanma1/go-grpc-wallet/domain/models"
 	"github.com/jackc/pgx/v4"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/sirupsen/logrus"

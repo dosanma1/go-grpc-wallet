@@ -3,11 +3,11 @@ package grpc
 import (
 	"net"
 
-	"github.com/dosanma1/bluelabs_assessment/config"
-	"github.com/dosanma1/bluelabs_assessment/domain/repository"
-	"github.com/dosanma1/bluelabs_assessment/domain/service"
-	"github.com/dosanma1/bluelabs_assessment/internal/server"
-	"github.com/dosanma1/bluelabs_assessment/pkg/pb"
+	"github.com/dosanma1/go-grpc-wallet/config"
+	"github.com/dosanma1/go-grpc-wallet/domain/repository"
+	"github.com/dosanma1/go-grpc-wallet/domain/service"
+	"github.com/dosanma1/go-grpc-wallet/internal/server"
+	"github.com/dosanma1/go-grpc-wallet/pkg/pb"
 	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/sirupsen/logrus"
 	"google.golang.org/grpc"

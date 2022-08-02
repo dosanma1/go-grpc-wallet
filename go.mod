@@ -1,4 +1,4 @@
-module github.com/dosanma1/bluelabs_assessment
+module github.com/dosanma1/go-grpc-wallet
 
 go 1.18
 

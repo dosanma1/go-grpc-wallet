@@ -3,9 +3,9 @@ package service
 import (
 	"context"
 
-	"github.com/dosanma1/bluelabs_assessment/domain/models"
-	"github.com/dosanma1/bluelabs_assessment/domain/repository"
-	"github.com/dosanma1/bluelabs_assessment/pkg/pb"
+	"github.com/dosanma1/go-grpc-wallet/domain/models"
+	"github.com/dosanma1/go-grpc-wallet/domain/repository"
+	"github.com/dosanma1/go-grpc-wallet/pkg/pb"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 )

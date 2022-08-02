@@ -3,7 +3,7 @@ package models
 import (
 	"log"
 
-	"github.com/dosanma1/bluelabs_assessment/pkg/pb"
+	"github.com/dosanma1/go-grpc-wallet/pkg/pb"
 	"github.com/google/uuid"
 )
 
